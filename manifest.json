@@ -1,0 +1,25 @@
+{
+  "name": "Teams Message",
+  "description": "Teams Message Copy Helper",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "permissions": ["contextMenus", "tabs", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://teams.microsoft.com/*"],
+      "js": ["content-script.js"]
+    }
+  ]
+}
