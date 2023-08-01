@@ -8,7 +8,7 @@
 
 1. The extension only works on the Teams website, `https://teams.microsoft.com/`.
 
-2. It implements a virtual rendering mechanism in Teams, which adds a copy feature when clicking the `Activate Message Copy` in the context menu.
+2. Due to a virtual rendering mechanism in Teams, after scrolling, the extension would add a copy feature when clicking the `Activate Message Copy` in the context menu.
 
 ## Descriptions
 
@@ -27,3 +27,6 @@ The service worker and web page work on separate threads. To trigger the action 
     <img src="doc/ext_install.png" width="200">
 
 ## Demo
+
+https://github.com/kimtth/chrome-extension-teams-msg-copy/assets/13846660/a8f986ce-f274-4944-8a33-be895ccd473a
+

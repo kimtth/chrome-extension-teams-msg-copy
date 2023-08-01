@@ -7,7 +7,7 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
     sendResponse({ result: "attached" });
     return true;
   } else {
-    dettachEvent();
+    detachEvent();
     sendResponse({ result: "detached" });
     return true;
   }
@@ -49,11 +49,11 @@ function attachEvent() {
   }
 }
 
-function dettachEvent() {
+function detachEvent() {
   const root = document.querySelector("iframe").contentWindow;
   const targetDivs = root.document.querySelectorAll(selector);
 
-  alert("dettachEvent");
+  alert("detachEvent");
   if (targetDivs.length > 0) {
     for (let i = 0; i < targetDivs.length; i++) {
       targetDivs[i].removeEventListener("click", handleClickEvent);
