@@ -27,3 +27,6 @@ The service worker and web page work on separate threads. To trigger the action 
     <img src="doc/ext_install.png" width="200">
 
 ## Demo
+
+https://github.com/kimtth/chrome-extension-teams-msg-copy/assets/13846660/a8f986ce-f274-4944-8a33-be895ccd473a
+
